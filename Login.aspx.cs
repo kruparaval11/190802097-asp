@@ -36,7 +36,7 @@ public partial class _Default : System.Web.UI.Page
                 Session["email"] = TextBox1.Text;
                 TextBox1.Text = string.Empty;
                 TextBox2.Text = string.Empty;
-                Response.Redirect("~/Homepage.aspx");
+                Response.Redirect("~/Dashboard.aspx");
             }
             else
             {

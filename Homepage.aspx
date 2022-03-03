@@ -1,484 +1,376 @@
-﻿
-<%@ Page Title="" Language="C#" MasterPageFile="~/adminMasterPage.master" AutoEventWireup="true" CodeFile="Homepage.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientMasterPage.master" AutoEventWireup="true" CodeFile="Homepage.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
-<!--sidebar start-->
-<aside>
-    <div id="sidebar" class="nav-collapse">
-        <!-- sidebar menu start-->
-        <div class="leftside-navigation">
-            <ul class="sidebar-menu" id="nav-accordion">
-                <li>
-                    <a class="active" href="index.html">
-                        <i class="fa fa-dashboard"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-book"></i>
-                        <span>UI Elements</span>
-                    </a>
-                    <ul class="sub">
-						<li><a href="typography.html">Typography</a></li>
-						<li><a href="glyphicon.html">glyphicon</a></li>
-                        <li><a href="grids.html">Grids</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="fontawesome.html">
-                        <i class="fa fa-bullhorn"></i>
-                        <span>Font awesome </span>
-                    </a>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-th"></i>
-                        <span>Data Tables</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="basic_table.html">Basic Table</a></li>
-                        <li><a href="responsive_table.html">Responsive Table</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-tasks"></i>
-                        <span>Form Components</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="form_component.html">Form Elements</a></li>
-                        <li><a href="form_validation.html">Form Validation</a></li>
-						<li><a href="dropzone.html">Dropzone</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-envelope"></i>
-                        <span>Mail </span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="mail.html">Inbox</a></li>
-                        <li><a href="mail_compose.html">Compose Mail</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class=" fa fa-bar-chart-o"></i>
-                        <span>Charts</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="chartjs.html">Chart js</a></li>
-                        <li><a href="flot_chart.html">Flot Charts</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class=" fa fa-bar-chart-o"></i>
-                        <span>Maps</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="google_map.html">Google Map</a></li>
-                        <li><a href="vector_map.html">Vector Map</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-glass"></i>
-                        <span>Extra</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="gallery.html">Gallery</a></li>
-						<li><a href="404.html">404 Error</a></li>
-                        <li><a href="registration.html">Registration</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="login.html">
-                        <i class="fa fa-user"></i>
-                        <span>Login Page</span>
-                    </a>
-                </li>
-            </ul>            </div>
-        <!-- sidebar menu end-->
-    </div>
-</aside>
-<!--sidebar end-->
-<!--main content start-->
-<section id="main-content">
-	<section class="wrapper">
-		<!-- //market-->
-		<div class="market-updates">
-			<div class="col-md-3 market-update-gd">
-				<div class="market-update-block clr-block-2">
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-eye"> </i>
-					</div>
-					 <div class="col-md-8 market-update-left">
-					 <h4>Visitors</h4>
-					<h3>13,500</h3>
-					<p>Other hand, we denounce</p>
-				  </div>
-				  <div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class="col-md-3 market-update-gd">
-				<div class="market-update-block clr-block-1">
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-users" ></i>
-					</div>
-					<div class="col-md-8 market-update-left">
-					<h4>Users</h4>
-						<h3>1,250</h3>
-						<p>Other hand, we denounce</p>
-					</div>
-				  <div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class="col-md-3 market-update-gd">
-				<div class="market-update-block clr-block-3">
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-usd"></i>
-					</div>
-					<div class="col-md-8 market-update-left">
-						<h4>Sales</h4>
-						<h3>1,500</h3>
-						<p>Other hand, we denounce</p>
-					</div>
-				  <div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class="col-md-3 market-update-gd">
-				<div class="market-update-block clr-block-4">
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-					</div>
-					<div class="col-md-8 market-update-left">
-						<h4>Orders</h4>
-						<h3>1,500</h3>
-						<p>Other hand, we denounce</p>
-					</div>
-				  <div class="clearfix"> </div>
-				</div>
-			</div>
-		   <div class="clearfix"> </div>
-		</div>	
-		<!-- //market-->
-		<div class="row">
-			<div class="panel-body">
-				<div class="col-md-12 w3ls-graph">
-					<!--agileinfo-grap-->
-						<div class="agileinfo-grap">
-							<div class="agileits-box">
-								<header class="agileits-box-header clearfix">
-									<h3>Visitor Statistics</h3>
-										<div class="toolbar">
-											
-											
-										</div>
-								</header>
-								<div class="agileits-box-body clearfix">
-									<div id="hero-area"></div>
-								</div>
-							</div>
+	<!-- banner slider -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+			<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+			<li data-target="#myCarousel" data-slide-to="3" class=""></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<div class="container">
+					<div class="carousel-caption">
+						<div class="col-md-6 slider_left">
+							<h2>facilisis non est ut, <span>bibendum finibus est.</span></h2>
+							<p>Nulla tempus mollis nulla, a sollicitudin orci posuere sit amet. Nam sed consectetur nulla, in auctor nunc.</p>
+							<a href="#about" class="hvr-bounce-to-right read scroll"><span class="fa fa-birthday-cake" aria-hidden="true"></span>Read More</a>
 						</div>
-	<!--//agileinfo-grap-->
-
+						<div class="col-md-6 slider_right">
+							<img src="csrc/images/cake.png" alt="cake1" />
+						</div>
+						<div class="clearfix"></div>
+					</div>
 				</div>
+			</div>
+			<div class="item item2">
+				<div class="container">
+					<div class="carousel-caption">
+						<div class="col-md-6 slider_left">
+							<h3>facilisis non est ut, <span>bibendum finibus est.</span></h3>
+							<p>Nulla tempus mollis nulla, a sollicitudin orci posuere sit amet. Nam sed consectetur nulla, in auctor nunc.</p>
+							<a href="#about" class="hvr-bounce-to-right read scroll"><span class="fa fa-birthday-cake" aria-hidden="true"></span>Read More</a>
+						</div>
+						<div class="col-md-6 slider_right">
+							<img src="csrc/images/cake1.png" alt="cake1" />
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item item3">
+				<div class="container">
+					<div class="carousel-caption">
+						<div class="col-md-6 slider_left">
+							<h3>facilisis non est ut, <span>bibendum finibus est.</span></h3>
+							<p>Nulla tempus mollis nulla, a sollicitudin orci posuere sit amet. Nam sed consectetur nulla, in auctor nunc.</p>
+							<a href="#about" class="hvr-bounce-to-right read scroll"><span class="fa fa-birthday-cake" aria-hidden="true"></span>Read More</a>
+						</div>
+						<div class="col-md-6 slider_right">
+							<img src="csrc/images/cake2.png" alt="cake1" />
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item item4">
+				<div class="container">
+					<div class="carousel-caption">
+						<div class="col-md-6 slider_left">
+							<h3>facilisis non est ut, <span>bibendum finibus est.</span></h3>
+							<p>Nulla tempus mollis nulla, a sollicitudin orci posuere sit amet. Nam sed consectetur nulla, in auctor nunc.</p>
+							<a href="#about" class="hvr-bounce-to-right read scroll"><span class="fa fa-birthday-cake" aria-hidden="true"></span>Read More</a>
+						</div>
+						<div class="col-md-6 slider_right">
+							<img src="csrc/images/cake3.png" alt="cake1" />
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					</div>
 			</div>
 		</div>
-		<div class="agil-info-calendar">
-		<!-- calendar -->
-		<div class="col-md-6 agile-calendar">
-			<div class="calendar-widget">
-                <div class="panel-heading ui-sortable-handle">
-					<span class="panel-icon">
-                      <i class="fa fa-calendar-o"></i>
-                    </span>
-                    <span class="panel-title"> Calendar Widget</span>
-                </div>
-				<!-- grids -->
-					<div class="agile-calendar-grid">
-						<div class="page">
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="fa fa-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="fa fa-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!-- The Modal -->
+	</div>
+	<!-- //banner slider -->
+
+<!-- welcome -->
+<div class="welcome"> 
+	<div class="container">
+		<div class="col-md-6 welcome-w3lright">
+			<div class="video-grid-single-page-agileits">
+				<div data-video="qvtjaAW3m-E" id="video"> <img src="csrc/images/about.png" alt="" class="img-responsive" /> </div>
+			</div>
+		</div> 
+		<div class="col-md-6 welcome_left">
+			<h3 class="agileits-title">Welcome To Bakery In</h3>
+			<h4>Donec in nisi non ipsum luctus interdi est. Cras ipsum augue, facilisis non estut, bibendum finibus.</h4>
+			<p>Phasellus sed semper dolor, sed sodales erat. Donec at mi nunc. Suspendisse dictum lorem nec velit scelerisque, ac egestas sem tempor. Integer at facilisis enim. Vestibulum tristique consequat finibus. Donec ut elementum lorem, id dignissim neque. Curabitur commodo, odio sit amet vestibulum pretium, urna quam tincidunt elit, a tempus ex urna sit amet tortor. Nulla volutpat pulvinar interdum.
+			Mauris vel malesuada magna, in venenatis erat. Vestibulum volutpat faucibus semper.</p>   
+		</div>
+		<div class="clearfix"> </div>
+	</div> 
+</div>
+<!-- //welcome -->
+
+<!-- /about -->
+	<div class="about">
+		<div class="container">
+			<div class="wthree_head_section">
+				<h3 class="heading">Know More About Our Bakery In</h3>
+			</div>
+			<div class="agile_wthree_inner_grids">
+				<div class="col-md-6 about_agileinfo">
+					<h4>Muisque sit amet sapien</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+						dummy text ever since the 1500s but also the leap into electronic typesetting dolor amet.</p>
+					<div class="mid-inner-info">
+						<div class="col-md-6 mid-inner-sec one">
+							<span class="fa fa-birthday-cake" aria-hidden="true"></span>
+							<h5>Delicious Cakes</h5>
+							<p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
 							
-							<div class="w3l-calendar-left">
-								<div class="calendar-heading">
-									
-								</div>
-								<div class="monthly" id="mycalendar"></div>
-							</div>
+						</div>
+						<div class="col-md-6 mid-inner-sec">
+							<span class="fa fa-cutlery" aria-hidden="true"></span>
+							<h5>Cheesecake Slices</h5>
+							<p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
 							
-							<div class="clearfix"> </div>
 						</div>
+						<div class="clearfix"></div>
 					</div>
+				</div>
+				<div class="col-md-6 about_agileinfo"><div class="mid-inner-info">
+						<div class="col-md-6 mid-inner-sec one">
+							<span class="fa fa-birthday-cake" aria-hidden="true"></span>
+							<h5>Baked Cakes</h5>
+							<p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+							
+						</div>
+						<div class="col-md-6 mid-inner-sec">
+							<span class="fa fa-spoon" aria-hidden="true"></span>
+							<h5>Fresh Cakes</h5>
+							<p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+							
+						</div>
+						<div class="clearfix"></div>
+					<h4>Muisque sit amet sapien</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+						dummy text ever since the 1500s but also the leap into electronic typesetting dolor amet.</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
-		<!-- //calendar -->
-		<div class="col-md-6 w3agile-notifications">
-			<div class="notifications">
-				<!--notification start-->
-				
-					<header class="panel-heading">
-						Notification 
-					</header>
-					<div class="notify-w3ls">
-						<div class="alert alert-info clearfix">
-							<span class="alert-icon"><i class="fa fa-envelope-o"></i></span>
-							<div class="notification-info">
-								<ul class="clearfix notification-meta">
-									<li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> send you a mail </li>
-									<li class="pull-right notification-time">1 min ago</li>
-								</ul>
-								<p>
-									Urgent meeting for next proposal
-								</p>
-							</div>
-						</div>
-						<div class="alert alert-danger">
-							<span class="alert-icon"><i class="fa fa-facebook"></i></span>
-							<div class="notification-info">
-								<ul class="clearfix notification-meta">
-									<li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> mentioned you in a post </li>
-									<li class="pull-right notification-time">7 Hours Ago</li>
-								</ul>
-								<p>
-									Very cool photo jack
-								</p>
-							</div>
-						</div>
-						<div class="alert alert-success ">
-							<span class="alert-icon"><i class="fa fa-comments-o"></i></span>
-							<div class="notification-info">
-								<ul class="clearfix notification-meta">
-									<li class="pull-left notification-sender">You have 5 message unread</li>
-									<li class="pull-right notification-time">1 min ago</li>
-								</ul>
-								<p>
-									<a href="#">Anjelina Mewlo, Jack Flip</a> and <a href="#">3 others</a>
-								</p>
-							</div>
-						</div>
-						<div class="alert alert-warning ">
-							<span class="alert-icon"><i class="fa fa-bell-o"></i></span>
-							<div class="notification-info">
-								<ul class="clearfix notification-meta">
-									<li class="pull-left notification-sender">Domain Renew Deadline 7 days ahead</li>
-									<li class="pull-right notification-time">5 Days Ago</li>
-								</ul>
-								<p>
-									Next 5 July Thursday is the last day
-								</p>
-							</div>
-						</div>
-						<div class="alert alert-info clearfix">
-							<span class="alert-icon"><i class="fa fa-envelope-o"></i></span>
-							<div class="notification-info">
-								<ul class="clearfix notification-meta">
-									<li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> send you a mail </li>
-									<li class="pull-right notification-time">1 min ago</li>
-								</ul>
-								<p>
-									Urgent meeting for next proposal
-								</p>
-							</div>
-						</div>
-						
-					</div>
-				
-				<!--notification end-->
-				</div>
+	</div>
+<!--//about -->
+	
+<!-- Popular cakes -->
+<div class="popular_cakes">
+	<div class="container">
+		<h3 class="heading">Most Popular cakes</h3>
+		<div class="cakes_grids">
+			<div class="col-md-4">
+			<div class="cakes_grid1">
+				<img src="csrc/images/c1.jpg" alt="popular cakes" />
+				<h3>Sponge Cake</h3>
+				<p>Vestibulum volutpat faucibus semper</p>
 			</div>
-			<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-4">
+			<div class="cakes_grid1">
+				<img src="csrc/images/c2.jpg" alt="popular cakes" />
+				<h3>Dessert Cake</h3>
+				<p>Vestibulum volutpat faucibus semper</p>
+			</div>
+			</div>
+			<div class="col-md-4">
+			<div class="cakes_grid1">
+				<img src="csrc/images/c3.jpg" alt="popular cakes" />
+				<h3>Cream Cake</h3>
+				<p>Vestibulum volutpat faucibus semper</p>
+			</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="cakes_bottom_grids">
+				<div class="col-md-4">
+				<div class="cakes_grid1">
+					<img src="csrc/images/c4.jpg" alt="popular cakes" />
+					<h3>Cream Cake</h3>
+					<p>Vestibulum volutpat faucibus semper</p>
+				</div>
+				</div>
+				<div class="col-md-4">
+				<div class="cakes_grid1">
+					<img src="csrc/images/c5.jpg" alt="popular cakes" />
+					<h3>Chocolate Cake</h3>
+					<p>Vestibulum volutpat faucibus semper</p>
+				</div>
+				</div>
+				<div class="col-md-4">
+				<div class="cakes_grid1">
+					<img src="csrc/images/c6.jpg" alt="popular cakes" />
+					<h3>Butter Cake</h3>
+					<p>Vestibulum volutpat faucibus semper</p>
+				</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
 		</div>
-			<!-- tasks -->
-			<div class="agile-last-grids">
-				<div class="col-md-4 agile-last-left">
-					<div class="agile-last-grid">
-						<div class="area-grids-heading">
-							<h3>Monthly</h3>
-						</div>
-						<div id="graph7"></div>
-						<script>
-						    // This crosses a DST boundary in the UK.
-						    Morris.Area({
-						        element: 'graph7',
-						        data: [
-							{ x: '2013-03-30 22:00:00', y: 3, z: 3 },
-							{ x: '2013-03-31 00:00:00', y: 2, z: 0 },
-							{ x: '2013-03-31 02:00:00', y: 0, z: 2 },
-							{ x: '2013-03-31 04:00:00', y: 4, z: 4 }
-						  ],
-						        xkey: 'x',
-						        ykeys: ['y', 'z'],
-						        labels: ['Y', 'Z']
-						    });
-						</script>
+	</div> 
+</div>
+<!-- //Popular cakes -->
 
+
+<!-- team -->
+	<div class="team" id="team">
+	   <div class="agile_dot_info two">
+		<div class="container">
+		<h3 class="heading">Our Staff</h3>
+			<div class="agileits_team_grids">
+				<div class="col-md-3">
+				<div class="agileits_team_grid">
+					<div class="agileits_team_grid_figure">
+						<img src="csrc/images/chef1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<h4>Jane Robert</h4>
+					<div class="social-icon">
+						<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
+						<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a> 
+						<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a> 
 					</div>
 				</div>
-				<div class="col-md-4 agile-last-left agile-last-middle">
-					<div class="agile-last-grid">
-						<div class="area-grids-heading">
-							<h3>Daily</h3>
-						</div>
-						<div id="graph8"></div>
-						<script>
-						    /* data stolen from http://howmanyleft.co.uk/vehicle/jaguar_'e'_type */
-						    var day_data = [
-						  { "period": "2016-10-01", "licensed": 3407, "sorned": 660 },
-						  { "period": "2016-09-30", "licensed": 3351, "sorned": 629 },
-						  { "period": "2016-09-29", "licensed": 3269, "sorned": 618 },
-						  { "period": "2016-09-20", "licensed": 3246, "sorned": 661 },
-						  { "period": "2016-09-19", "licensed": 3257, "sorned": 667 },
-						  { "period": "2016-09-18", "licensed": 3248, "sorned": 627 },
-						  { "period": "2016-09-17", "licensed": 3171, "sorned": 660 },
-						  { "period": "2016-09-16", "licensed": 3171, "sorned": 676 },
-						  { "period": "2016-09-15", "licensed": 3201, "sorned": 656 },
-						  { "period": "2016-09-10", "licensed": 3215, "sorned": 622 }
-						];
-						    Morris.Bar({
-						        element: 'graph8',
-						        data: day_data,
-						        xkey: 'period',
-						        ykeys: ['licensed', 'sorned'],
-						        labels: ['Licensed', 'SORN'],
-						        xLabelAngle: 60
-						    });
-						</script>
+				</div>
+				<div class="col-md-3">
+				<div class="agileits_team_grid">
+					<div class="agileits_team_grid_figure">
+						<img src="csrc/images/chef2.jpg" alt=" " class="img-responsive" />
+					</div>
+					<h4>James Doe</h4>
+					<div class="social-icon">
+						<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
+						<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a> 
+						<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a> 
 					</div>
 				</div>
-				<div class="col-md-4 agile-last-left agile-last-right">
-					<div class="agile-last-grid">
-						<div class="area-grids-heading">
-							<h3>Yearly</h3>
-						</div>
-						<div id="graph9"></div>
-						<script>
-						    var day_data = [
-						  { "elapsed": "I", "value": 34 },
-						  { "elapsed": "II", "value": 24 },
-						  { "elapsed": "III", "value": 3 },
-						  { "elapsed": "IV", "value": 12 },
-						  { "elapsed": "V", "value": 13 },
-						  { "elapsed": "VI", "value": 22 },
-						  { "elapsed": "VII", "value": 5 },
-						  { "elapsed": "VIII", "value": 26 },
-						  { "elapsed": "IX", "value": 12 },
-						  { "elapsed": "X", "value": 19 }
-						];
-						    Morris.Line({
-						        element: 'graph9',
-						        data: day_data,
-						        xkey: 'elapsed',
-						        ykeys: ['value'],
-						        labels: ['value'],
-						        parseTime: false
-						    });
-						</script>
-
+				</div>
+				<div class="col-md-3">
+				<div class="agileits_team_grid">
+					<div class="agileits_team_grid_figure">
+						<img src="csrc/images/chef3.jpg" alt=" " class="img-responsive" />
 					</div>
+					<h4>Laura Olivia</h4>
+					<div class="social-icon">
+						<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
+						<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a> 
+						<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a> 
+					</div>
+				</div>
+				</div>
+				<div class="col-md-3">
+				<div class="agileits_team_grid">
+					<div class="agileits_team_grid_figure">
+						<img src="csrc/images/chef4.jpg" alt=" " class="img-responsive" />
+					</div>
+					<h4>William James</h4>
+					<div class="social-icon">
+						<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
+						<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a> 
+						<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a> 
+					</div>
+				</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-		<!-- //tasks -->
-		<div class="agileits-w3layouts-stats">
-					<div class="col-md-4 stats-info widget">
-						<div class="stats-info-agileits">
-							<div class="stats-title">
-								<h4 class="title">Browser Stats</h4>
+		</div>
+	</div>
+</div>
+<!-- //team -->
+
+<!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+		<h3 class="heading">Our Customer reviews</h3>
+			<div class="testimonials-grids">
+				<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s">
+					<div class="wmuSliderWrapper">
+						<article style="position: absolute; width: 100%; opacity: 0;"> 
+							<div class="banner-wrap">
+								<div class="testimonials-grid">
+									<div class="testimonials-grid-left">
+										<img src="csrc/images/t1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="testimonials-grid-right">
+										<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+											praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+											excepturi sint occaecati cupiditate non provident. Duis maximus, velit posuere rutrum tempus, nibh ligula semper felis.</p>
+										<h4>Richard Doe</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
 							</div>
-							<div class="stats-body">
-								<ul class="list-unstyled">
-									<li>GoogleChrome <span class="pull-right">85%</span>  
-										<div class="progress progress-striped active progress-right">
-											<div class="bar green" style="width:85%;"></div> 
-										</div>
-									</li>
-									<li>Firefox <span class="pull-right">35%</span>  
-										<div class="progress progress-striped active progress-right">
-											<div class="bar yellow" style="width:35%;"></div>
-										</div>
-									</li>
-									<li>Internet Explorer <span class="pull-right">78%</span>  
-										<div class="progress progress-striped active progress-right">
-											<div class="bar red" style="width:78%;"></div>
-										</div>
-									</li>
-									<li>Safari <span class="pull-right">50%</span>  
-										<div class="progress progress-striped active progress-right">
-											<div class="bar blue" style="width:50%;"></div>
-										</div>
-									</li>
-									<li>Opera <span class="pull-right">80%</span>  
-										<div class="progress progress-striped active progress-right">
-											<div class="bar light-blue" style="width:80%;"></div>
-										</div>
-									</li>
-									<li class="last">Others <span class="pull-right">60%</span>  
-										<div class="progress progress-striped active progress-right">
-											<div class="bar orange" style="width:60%;"></div>
-										</div>
-									</li> 
-								</ul>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;"> 
+							<div class="banner-wrap">
+								<div class="testimonials-grid">
+									<div class="testimonials-grid-left">
+										<img src="csrc/images/t3.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="testimonials-grid-right">
+										<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+											praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+											excepturi sint occaecati cupiditate non provident. Duis maximus, velit posuere rutrum tempus, nibh ligula semper felis.</p>
+										<h4>Rita James</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
 							</div>
-						</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;"> 
+							<div class="banner-wrap">
+								<div class="testimonials-grid">
+									<div class="testimonials-grid-left">
+										<img src="csrc/images/t2.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="testimonials-grid-right">
+										<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+											praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+											excepturi sint occaecati cupiditate non provident. Duis maximus, velit posuere rutrum tempus, nibh ligula semper felis.</p>
+										<h4>Crisp Ali</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;"> 
+							<div class="banner-wrap">
+								<div class="testimonials-grid">
+									<div class="testimonials-grid-left">
+										<img src="csrc/images/t1.jpg" alt=" " class="img-responsive" />
+									</div>
+									<div class="testimonials-grid-right">
+										<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+											praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+											excepturi sint occaecati cupiditate non provident. Duis maximus, velit posuere rutrum tempus, nibh ligula semper felis</p>
+										<h4>Laura roy</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+						</article>
 					</div>
-					<div class="col-md-8 stats-info stats-last widget-shadow">
-						<div class="stats-last-agile">
-							<table class="table stats-table ">
-								<thead>
-									<tr>
-										<th>S.NO</th>
-										<th>PRODUCT</th>
-										<th>STATUS</th>
-										<th>PROGRESS</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Lorem ipsum</td>
-										<td><span class="label label-success">In progress</span></td>
-										<td><h5>85% <i class="fa fa-level-up"></i></h5></td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>Aliquam</td>
-										<td><span class="label label-warning">New</span></td>
-										<td><h5>35% <i class="fa fa-level-up"></i></h5></td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>Lorem ipsum</td>
-										<td><span class="label label-danger">Overdue</span></td>
-										<td><h5 class="down">40% <i class="fa fa-level-down"></i></h5></td>
-									</tr>
-									<tr>
-										<th scope="row">4</th>
-										<td>Aliquam</td>
-										<td><span class="label label-info">Out of stock</span></td>
-										<td><h5>100% <i class="fa fa-level-up"></i></h5></td>
-									</tr>
-									<tr>
-										<th scope="row">5</th>
-										<td>Lorem ipsum</td>
-										<td><span class="label label-success">In progress</span></td>
-										<td><h5 class="down">10% <i class="fa fa-level-down"></i></h5></td>
-									</tr>
-									<tr>
-										<th scope="row">6</th>
-										<td>Aliquam</td>
-										<td><span class="label label-warning">New</span></td>
-										<td><h5>38% <i class="fa fa-level-up"></i></h5></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
 				</div>
-</section>
+			</div>
+		</div>
+	</div>
+<!-- //testimonials -->
+
+<!-- subscribe -->
+<div class="subscribe">
+	<div class="container">
+		<h3 class="heading">Subscribe To Get Notifications</h3>
+		<div class="subscribe-grid">
+			<form action="#" method="post">
+				<input type="email" placeholder="Enter Your Email" name="email" required="">
+				<button class="btn1"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- //subscribe -->
 </asp:Content>
 
