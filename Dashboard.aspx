@@ -28,6 +28,12 @@
                     </ul>
                 </li>
                 <li>
+                    <a href="ManageUser.aspx">
+                        <i class="fa fa-user"></i>
+                        <span>Manage User </span>
+                    </a>
+                </li>
+                <li>
                     <a href="fontawesome.html">
                         <i class="fa fa-bullhorn"></i>
                         <span>Font awesome </span>
@@ -96,7 +102,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="login.html">
+                    <a href="login.aspx">
                         <i class="fa fa-user"></i>
                         <span>Login Page</span>
                     </a>
