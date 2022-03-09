@@ -33,6 +33,12 @@
                         <span>Manage User </span>
                     </a>
                 </li>
+                 <li>
+                    <a href="ManageService.aspx">
+                        <i class="fa fa-user"></i>
+                        <span>Manage Service </span>
+                    </a>
+                </li>
                 <li>
                     <a href="fontawesome.html">
                         <i class="fa fa-bullhorn"></i>
@@ -98,7 +104,7 @@
                     <ul class="sub">
                         <li><a href="gallery.html">Gallery</a></li>
 						<li><a href="404.html">404 Error</a></li>
-                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="Registration.aspx">Registration</a></li>
                     </ul>
                 </li>
                 <li>
