@@ -2,9 +2,7 @@
  CodeFile="ManageUser.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <section id="main-content">
-	<section class="wrapper">
-	<div class="form-w3layouts">
+    
         <!-- page start-->
         <!-- page start-->
         <div class="row">
