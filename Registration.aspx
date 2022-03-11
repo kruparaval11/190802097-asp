@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <asp:Button ID="Button1" runat="server" Text="submit" onclick="Button1_Click" />
         <asp:Literal ID="Literal1" runat="server"></asp:Literal>
 		</form>
-		<p>Already Registered.<a href="login.html">Login</a></p>
+		<p>Already Registered.<a href="login.aspx">Login</a></p>
 </div>
 </div>
 <script src="src/js/bootstrap.js"></script>

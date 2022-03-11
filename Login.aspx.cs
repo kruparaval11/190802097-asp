@@ -20,10 +20,9 @@ public partial class _Default : System.Web.UI.Page
 
     }
     SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DatabaseConnectionString1"].ConnectionString);
-   
-    protected void Unnamed1_Click(object sender, EventArgs e)
+
+    protected void Button1_Click(object sender, EventArgs e)
     {
-        
          try
         {
             SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [users] WHERE [email] = @email AND [password] = @password", con);
@@ -51,6 +50,6 @@ public partial class _Default : System.Web.UI.Page
             Response.Write("<script>alert('" + ex.ToString() + "')</script>");
         }
     }
-
- }
+    
+}
 

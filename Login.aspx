@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="clearfix">
                     <asp:Literal ID="Literal1" runat="server"></asp:Literal>
                 </div>
-                <asp:Button runat="server" Text="Submit" onclick="Unnamed1_Click"  />
+                <asp:Button runat="server" Text="Submit" onclick="Button1_Click"  />
                
                 </form>
                 <p>

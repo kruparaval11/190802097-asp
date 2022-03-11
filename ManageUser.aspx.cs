@@ -70,7 +70,7 @@ public partial class _Default : System.Web.UI.Page
         {
             TextBox4.Text = string.Empty;
             TextBox2.Text = string.Empty;
-            TextBox4.Text = string.Empty;
+            TextBox3.Text = string.Empty;
             Literal5.Text = "Error!!";
         }
     }
