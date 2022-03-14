@@ -298,7 +298,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <span>Manage Products</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="<a href="ManageCategory.aspx">Manage Category</a></li>
+                        <li><a href="ManageCategory.aspx">Manage Category</a></li>
                         <li><a href="#">Manage Products</a></li>
                     </ul>
                 </li>
