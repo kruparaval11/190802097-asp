@@ -86,28 +86,39 @@ public partial class _Default : System.Web.UI.Page
     }
     protected void Button4_Click(object sender, EventArgs e)
     {
-        //delete
-         Button btn = (Button)sender;
-        SqlCommand cmd = new SqlCommand("DELETE FROM [categories] WHERE [id] = @id", con);
-        cmd.Parameters.AddWithValue("@id", btn.CommandArgument);
-        con.Open();
-        int s = cmd.ExecuteNonQuery();
-        con.Close();
-        if (s == 1)
+        try
         {
-            TextBox4.Text = string.Empty;
-            RadioButtonList1.ClearSelection();
-            print();
-            Literal5.Text = "Record Delete";
+            //delete
+            Button btn = (Button)sender;
+            SqlCommand cmd = new SqlCommand("DELETE FROM [categories] WHERE [id] = @id", con);
+            cmd.Parameters.AddWithValue("@id", btn.CommandArgument);
+            con.Open();
+            int s = cmd.ExecuteNonQuery();
+
+            con.Close();
+            if (s == 1)
+            {
+                TextBox4.Text = string.Empty;
+                RadioButtonList1.ClearSelection();
+                print();
+                Literal5.Text = "Record Delete";
+            }
+            else
+            {
+                TextBox4.Text = string.Empty;
+                RadioButtonList1.ClearSelection();
+                print();
+                Literal5.Text = "Error";
+            }
         }
-        else
+
+
+        catch
         {
-            TextBox4.Text = string.Empty;
-            RadioButtonList1.ClearSelection();
-            print();
-            Literal5.Text = "Error";
+            Response.Write("<script language='java script'> alert('You can not delete this category because system having products of this category') </script>");
         }
     }
+     
 
     protected void Button5_Click(object sender, EventArgs e)
     {

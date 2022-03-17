@@ -15,7 +15,7 @@
                             <div class="form-group">
                                     <label for="exampleInputEmail1">Title</label>
                                     
-                                    <asp:TextBox ID="TextBox4" runat="server" class="form-control" placeholder="Enter name"></asp:TextBox>
+                                    <asp:TextBox ID="TextBox4" runat="server" class="form-control" placeholder="Enter title"></asp:TextBox>
                                 </div>
                                 
                                 <div class="form-group">
