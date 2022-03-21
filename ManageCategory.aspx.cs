@@ -129,5 +129,6 @@ public partial class _Default : System.Web.UI.Page
         adpt.Fill(dt);
         TextBox4.Text = dt.Rows[0][1].ToString();
          ViewState["category_id"] = btn.CommandArgument;
+         Button3.Text = "Update";
     }
 }

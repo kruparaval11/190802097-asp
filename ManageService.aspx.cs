@@ -96,6 +96,7 @@ public partial class _Default : System.Web.UI.Page
         TextBox4.Text = dt.Rows[0][1].ToString();
         TextBox2.Text = dt.Rows[0][2].ToString();
         ViewState["service_id"] = btn.CommandArgument;
+        Button4.Text = "Update";
     }
 
     protected void Button6_Click(object sender, EventArgs e)
