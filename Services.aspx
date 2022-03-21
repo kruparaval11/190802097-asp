@@ -9,7 +9,7 @@
         				<div class="popular-agileinfo">
 					<div class="col-md-3 popular-grid">
 						<i class="fa fa-birthday-cake" aria-hidden="true"></i>
-						<h4>Birthday Cakes <br /> <%# Eval("title") %> </a></h4> <br />
+						<h4>Cakes <br /> <%# Eval("title") %> </a></h4> <br />
 						<p><%# Eval("discription").ToString().Length > 180 ? Eval("discription").ToString().Substring(0, 180) + "..." : Eval("discription").ToString()%></p>
 					</div>	
         </ItemTemplate>

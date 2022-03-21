@@ -31,8 +31,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<h2>Register Now</h2>
 		<form id="form1" runat="server">	
         <asp:TextBox ID="TextBox1" runat="server" class="ggg" placeholder="NAME"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+            ErrorMessage="Please enter name" ControlToValidate="TextBox1" Display="Dynamic" 
+            ForeColor="Red"></asp:RequiredFieldValidator>
         <asp:TextBox ID="TextBox2" runat="server" class="ggg"  placeholder="E-MAIL"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+            ErrorMessage="Please Enter email" ControlToValidate="TextBox2" 
+            Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
         <asp:TextBox ID="TextBox4" runat="server" class="ggg" placeholder="PASSWORD"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+            ErrorMessage="Enter Password" ControlToValidate="TextBox4" Display="Dynamic" 
+            ForeColor="Red"></asp:RequiredFieldValidator>
+        <asp:TextBox ID="TextBox3" runat="server" class="ggg" placeholder=" CONFIRM PASSWORD"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
+            ErrorMessage="Enter confirm password" ControlToValidate="TextBox3" 
+            Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+        <asp:CompareValidator ID="CompareValidator1" runat="server" 
+            ErrorMessage="Password doesn't match" ControlToCompare="TextBox4" 
+            ControlToValidate="TextBox3" Display="Dynamic" ForeColor="Red"></asp:CompareValidator>
 			<h4><input type="checkbox" />I agree to the Terms of Service and Privacy Policy</h4>
 			
 				<div class="clearfix"></div>
